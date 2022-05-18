@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>VS Code</title>
+  </head>
+  <body>   
+    <header class="header" style="background-color: #2f343f;">
+      <div class="project-name">⚪ dalsi.txt - muj-projekt - Visual Studio Code</div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#"><span>f</span>ile</a></li>
+          <li><a href="#"><span>e</span>dit</a></li>
+          <li><a href="#"><span>s</span>election</a></li>
+          <li class="dropdown-btn"><a href="#"><span>v</span>iew</a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="#" class="command-pallete-btn active">command pallete...
+                  <span>Ctrl+Shift+p</span>
+                </a>
+              </li>
+              <li><a href="#">open view...</a></li>
+              <hr />
+              <li>
+                <a href="#">appearance 
+                  <i class="fa fa-caret-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">editor layout
+                  <i class="fa fa-caret-right"></i>
+                </a>  
+              </li>
+              <hr />
+              <li>
+                <a href="#" class="explorer-btn">explorer
+                  <span>Alt+5</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">search
+                  <span>Ctrl+Shift+F</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">SCM
+                  <span>Alt+3</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">run
+                  <span>Alt+4</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="extension-btn">extensions
+                  <span>Ctrl+Shift+X</span>
+                </a>
+              </li>
+              <hr>
+              <li><a href="#">output [Ctrl+K Ctrl+H]</a></li>
+              <li>
+                <a href="#">debug console
+                  <span>Ctrl+Shif+Y</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">terminal
+                  <span>Alt+F12</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">problems
+                  <span>Ctrl+Shif+M</span>
+                </a>
+              </li>
+              <hr />
+              <li>
+                <a href="#">toggle word wrap
+                  <span>Alt+Z</span>
+                </a>
+              </li>
+              <li><a href="#"><i class="check fa fa-check"></i>show minimap</a></li>
+              <li><a href="#"><i class="check fa fa-check"></i>show breadcrumbs</a></li>
+              <li><a href="#"><i class="check fa fa-check"></i>render whitespace</a></li>
+              <li><a href="#">render control characters</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>g</span>o</a></li>
+          <li><a href="#"><span>r</span>un</a></li>
+          <li><a href="#"><span>t</span>erminal</a></li>
+          <li><a href="#"><span>h</span>elp</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="sidebar-editor">
+      <div class="sidebar">
+        <div class="explorer">
+          <div class="sidebar-heading">explorer</div>
+          <div class="sidebar-folder">
+            <div class="folder-name active">
+              <i class="fa fa-angle-down"></i>open editor
+            </div>
+            <div class="folder-files active">
+              <i class="fa fa-align-left"></i> dalsi.txt
+            </div>
+          </div>
+          <div class="sidebar-folder">
+            <div class="folder-name active">
+              <i class="fa fa-angle-down"></i>muj-project
+            </div>
+            <div class="sidebar-sub-folder">
+              <div class="folder-name">
+                <i class="fa fa-angle-down"></i>slozka
+              </div>
+              <div class="folder-files active">
+                <i class="fa fa-align-left"></i> dalsi.txt
+              </div>
+            </div>
+            <div class="sidebar-sub-folder">
+              <div class="folder-name">
+                <i class="fa fa-angle-down"></i>slozka
+              </div>
+              <div class="folder-files">
+                <i class="fa fa-code"></i> app.js
+              </div>
+            </div>
+            <div class="folder-files">
+              <i class="fa fa-code"></i> soubor.html
+            </div>
+            <div class="folder-files">
+              <i class="fa fa-align-left"></i> soubor.txt
+            </div>
+          </div>
+        </div>
+        <div class="extensions">
+          <div class="sidebar-heading" style="padding-bottom: 0;">extensions</div>
+          <div class="searchbar">
+            <form action="">
+              <input type="text" placeholder="Search Extensions in Marketplace...">
+            </form>
+          </div>
+          <div class="extension-type">
+            <a href="#"><i class="fa fa-angle-down"></i>enabled <span>10</span></a>
+          </div>
+          <div class="extension-item">
+            <div class="extension-item-name">
+              C# <span>1.21.15</span>
+            </div>
+            <div class="extension-item-desc">
+              C# for Visual Studio Code (powered by microsoft)
+            </div>
+            <div class="extension-item-company">microsoft <i class="fa fa-cog"></i></div>
+          </div>
+          <div class="extension-item">
+            <div class="extension-item-name">
+              Code Spell Checker <span>1.8.0</span>
+            </div>
+            <div class="extension-item-desc">
+              Spelling checker for source code
+            </div>
+            <div class="extension-item-company">stree side software <i class="fa fa-cog"></i></div>
+          </div>
+          <div class="extension-item">
+            <div class="extension-item-name">
+              Docker <span>1.0.0</span>
+            </div>
+            <div class="extension-item-desc">
+              Makes its easy to create and manage code...
+            </div>
+            <div class="extension-item-company">microsoft <i class="fa fa-cog"></i></div>
+          </div>
+          <div class="extension-type">
+            <a href="#"><i class="fa fa-angle-down"></i>recommended <span>8</span></a>
+          </div>
+          <div class="extension-item">
+            <div class="extension-item-name">
+              Debugger For Chrome <span>4.12.6</span>
+            </div>
+            <div class="extension-item-desc">
+              Debug your javascript code in chrome
+            </div>
+            <div class="extension-item-company">microsoft <i class="fa fa-cog"></i></div>
+          </div>
+          <div class="extension-item">
+            <div class="extension-item-name">
+              Jshint <span>0.10.21</span>
+            </div>
+            <div class="extension-item-desc">
+              Integrates JSHint code into VS Code
+            </div>
+            <div class="extension-item-company">dirk baeumer <i class="fa fa-cog"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="editor">
+        <div class="editor-header">
+          <div class="editor-filename">
+            <i class="fa fa-align-left"></i> dalsi.txt
+          </div>
+        </div>
+        <div class="editor-content">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="command-pallete">
+      <div class="searchbar">
+        <form action="#">
+          <input type="text" placeholder=">" autofocus />
+        </form>
+      </div>
+      <div class="items">
+        <ul>
+          <li class="active">preferences: open settings</li>
+          <li>change language mode</li>
+          <li>MS SQL: execute query</li>
+          <li>view: SQL server</li>
+          <li>file: reveal active file in sidebar</li>
+          <li>view: toggle sidebar visibility</li>
+          <li>MS SQL: use database</li>
+          <li>MS SQL: getting started quide</li>
+          <li>MS SQL: add connection</li>
+          <li>preferences: keymaps</li>
+          <li>ESLint: fix all auto-fixable problems</li>
+          <li>detect indentation from content</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const commandPalleteBtn = document.querySelector(".command-pallete-btn");
+      const extensionBtn = document.querySelector(".extension-btn");
+      const explorerBtn = document.querySelector(".explorer-btn");
+
+      const commandPallete = document.querySelector(".command-pallete");
+      const extensions = document.querySelector(".extensions");
+      const explorer = document.querySelector(".explorer");
+
+      commandPalleteBtn.addEventListener("click", togglePallete);
+      extensionBtn.addEventListener("click", showExtensions);
+      explorerBtn.addEventListener("click", showExplorer);
+
+      function togglePallete() {
+         commandPallete.classList.toggle("active");  
+      } 
+
+      function showExtensions() {
+         extensions.style.display = "block";  
+         explorer.style.display = "none"; 
+      } 
+
+      function showExplorer() {
+         extensions.style.display = "none";  
+         explorer.style.display = "block"; 
+      } 
+
+      window.onclick = function(event) {
+        if (event.target == commandPallete) {
+          commandPallete.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
